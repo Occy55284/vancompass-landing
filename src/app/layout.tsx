@@ -34,6 +34,10 @@ export const metadata: Metadata = {
     description:
       "Surf, kite, fishing, wild camping, weather and van services — all on one live map.",
   },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
