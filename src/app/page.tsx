@@ -6,7 +6,7 @@ const features = [
     emoji: "🏄",
     title: "Surf spots",
     desc: "Computed surf score, traffic-light verdict, tide times, wetsuit advice, and a 5-day forecast — at a glance.",
-    screenshot: "/screenshots/surf.svg",
+    screenshot: "/screenshots/surf.png",
   },
   {
     emoji: "🪁",
