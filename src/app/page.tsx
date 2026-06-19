@@ -6,31 +6,37 @@ const features = [
     emoji: "🏄",
     title: "Surf spots",
     desc: "Computed surf score, traffic-light verdict, tide times, wetsuit advice, and a 5-day forecast — at a glance.",
+    screenshot: "/screenshots/surf.svg",
   },
   {
     emoji: "🪁",
     title: "Kite spots",
     desc: "Wind-aware spot picks so you know where to rig before you drive there.",
+    screenshot: "/screenshots/kite.svg",
   },
   {
     emoji: "🎣",
     title: "Fishing marks",
     desc: "Curated marks around the UK coast, with live conditions overlaid.",
+    screenshot: "/screenshots/fishing.svg",
   },
   {
     emoji: "🏕️",
     title: "Wild camps & campsites",
     desc: "Find a place to park up for the night, rated and located by people who've been there.",
+    screenshot: "/screenshots/camping.svg",
   },
   {
     emoji: "⛽",
     title: "Van services",
     desc: "Live radius search for fuel, supermarkets, chemists and campsites — plus real-time UK fuel prices.",
+    screenshot: "/screenshots/services.svg",
   },
   {
     emoji: "🌦️",
     title: "Weather & tides",
     desc: "Marine and land forecasts baked into every spot, so you get a straight 'should I go?' answer.",
+    screenshot: "/screenshots/weather.svg",
   },
 ];
 
@@ -54,12 +60,12 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="mx-auto flex max-w-6xl flex-col items-center px-6 pt-16 pb-24 text-center sm:pt-24">
-          <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white p-2 shadow-xl shadow-black/40 ring-1 ring-white/10 sm:h-28 sm:w-28">
+          <div className="mb-6 flex h-32 w-32 items-center justify-center rounded-full bg-white p-2 shadow-xl shadow-black/40 ring-1 ring-white/10 sm:h-44 sm:w-44">
             <Image
               src="/logo.png"
               alt="VanCompass logo"
-              width={112}
-              height={112}
+              width={176}
+              height={176}
               className="rounded-full"
             />
           </div>
@@ -96,11 +102,21 @@ export default function Home() {
             {features.map((f) => (
               <div
                 key={f.title}
-                className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-emerald-400/30"
+                className="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-emerald-400/30"
               >
                 <div className="mb-4 text-3xl">{f.emoji}</div>
                 <h3 className="mb-2 text-lg font-semibold text-white">{f.title}</h3>
                 <p className="text-sm leading-relaxed text-zinc-400">{f.desc}</p>
+
+                <div className="pointer-events-none absolute inset-x-4 bottom-full z-10 mb-3 origin-bottom scale-95 overflow-hidden rounded-xl border border-emerald-400/30 bg-[#0b1018] opacity-0 shadow-2xl shadow-black/50 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100">
+                  <Image
+                    src={f.screenshot}
+                    alt={`${f.title} preview`}
+                    width={480}
+                    height={320}
+                    className="h-auto w-full"
+                  />
+                </div>
               </div>
             ))}
           </div>
