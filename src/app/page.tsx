@@ -12,19 +12,19 @@ const features = [
     emoji: "🪁",
     title: "Kite spots",
     desc: "Wind-aware spot picks so you know where to rig before you drive there.",
-    screenshot: "/screenshots/kite.svg",
+    screenshot: "/screenshots/kite.png",
   },
   {
     emoji: "🎣",
     title: "Fishing marks",
     desc: "Curated marks around the UK coast, with live conditions overlaid.",
-    screenshot: "/screenshots/fishing.svg",
+    screenshot: "/screenshots/fishing.png",
   },
   {
     emoji: "🏕️",
     title: "Wild camps & campsites",
     desc: "Find a place to park up for the night, rated and located by people who've been there.",
-    screenshot: "/screenshots/camping.svg",
+    screenshot: "/screenshots/camping.png",
   },
   {
     emoji: "⛽",
@@ -33,10 +33,10 @@ const features = [
     screenshot: "/screenshots/services.svg",
   },
   {
-    emoji: "🌦️",
-    title: "Weather & tides",
-    desc: "Marine and land forecasts baked into every spot, so you get a straight 'should I go?' answer.",
-    screenshot: "/screenshots/weather.svg",
+    emoji: "📍",
+    title: "Near me",
+    desc: "Drop a pin and see every surf, kite, fishing, camping and service spot within reach — sorted by distance.",
+    screenshot: "/screenshots/nearme.png",
   },
 ];
 
