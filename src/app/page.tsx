@@ -113,13 +113,13 @@ export default function Home() {
             Drop your email and we&apos;ll let you know the moment early access opens.
           </p>
           <a
-            href="mailto:hello@vancompass.co.uk?subject=Early%20access%20to%20VanCompass"
+            href="mailto:grahammark55284@gmail.com?subject=Early%20access%20to%20VanCompass"
             className="mt-8 rounded-full bg-emerald-400 px-8 py-3 text-sm font-semibold text-black transition-colors hover:bg-emerald-300"
           >
             Email us for early access
           </a>
           <p className="mt-3 text-xs text-zinc-500">
-            hello@vancompass.co.uk
+            grahammark55284@gmail.com
           </p>
         </section>
       </main>
