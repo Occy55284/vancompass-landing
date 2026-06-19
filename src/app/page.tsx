@@ -38,8 +38,10 @@ export default function Home() {
   return (
     <div className="flex flex-1 flex-col">
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
-        <span className="flex items-center gap-2 text-lg font-semibold tracking-tight text-white">
-          <Image src="/logo.png" alt="VanCompass logo" width={32} height={32} className="rounded-md" />
+        <span className="flex items-center gap-3 text-lg font-semibold tracking-tight text-white">
+          <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white p-1 shadow-md shadow-black/30 ring-1 ring-white/10">
+            <Image src="/logo.png" alt="VanCompass logo" width={40} height={40} className="rounded-full" />
+          </span>
           Van<span className="text-emerald-400">Compass</span>
         </span>
         <a
@@ -52,6 +54,15 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="mx-auto flex max-w-6xl flex-col items-center px-6 pt-16 pb-24 text-center sm:pt-24">
+          <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white p-2 shadow-xl shadow-black/40 ring-1 ring-white/10 sm:h-28 sm:w-28">
+            <Image
+              src="/logo.png"
+              alt="VanCompass logo"
+              width={112}
+              height={112}
+              className="rounded-full"
+            />
+          </div>
           <span className="mb-5 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-medium tracking-wide text-zinc-400">
             UK VAN LIFE COMPANION MAP
           </span>
