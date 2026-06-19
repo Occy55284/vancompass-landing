@@ -1,3 +1,4 @@
+import Image from "next/image";
 import WaitlistForm from "./waitlist-form";
 
 const features = [
@@ -37,7 +38,8 @@ export default function Home() {
   return (
     <div className="flex flex-1 flex-col">
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
-        <span className="text-lg font-semibold tracking-tight text-white">
+        <span className="flex items-center gap-2 text-lg font-semibold tracking-tight text-white">
+          <Image src="/logo.png" alt="VanCompass logo" width={32} height={32} className="rounded-md" />
           Van<span className="text-emerald-400">Compass</span>
         </span>
         <a
