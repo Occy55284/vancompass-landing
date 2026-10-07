@@ -1,0 +1,12 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "functions": {
+    "app/api/process-beo/route.js": {
+      "maxDuration": 300
+    },
+    "app/api/pdf-to-md/route.js": {
+      "maxDuration": 300
+    }
+  }
+}
